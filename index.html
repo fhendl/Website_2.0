@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="dist/css/lightbox.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <ul class="tab-menu">
+      <li data-tab="about" class="active" tabindex="0">About</li>
+      <li data-tab="resume" tabindex="0">Resume</li>
+      <li data-tab="portfolio" tabindex="0">Portfolio</li>
+      <li data-tab="contact" tabindex="0">Contact</li>
+      </ul>
+
+      <button id="theme-toggle" aria-label="Toggle Light/Dark Mode">Light/Dark Mode</button>
+
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section with Sticky Title Header -->
+    <section id="about" class="tab-content active">
+      <div class="sticky-title-header">
+        <figure class="avatar-box">
+          <img src="./assets/images/headshot.jpeg" alt="Picture of Self" width="120">
+        </figure>
+        <div class="info-content">
+            <div class="intro-name">Filip Hendl</div>
+            <div class="intro-title">Student at the University of Michigan</div>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <h2>About Me</h2>
+      <p>Hi! My name is Filip Hendl, I’m currently a Junior at the University of Michigan, majoring in Information Analysis with a minor in Entrepreneurship. I am passionate about developing solutions that integrate people, data, and technology at their core.</p>
+
+      <!-- Skills -->
+      <div class="skills">
+        <h2>Technical Skills</h2>
+        <ul class="skill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>R Statistics</li>
+          <li>Microsoft Excel</li>
+          <li>Power Query</li>
+          <li>Pandas</li>
+          <li>Web Scraping</li>
+        </ul>
+      </div>
+
+      <!-- Education -->
+      <h2>Education</h2>
+      <p><strong>Bachelor of Science in Information</strong></p>
+      <p>University of Michigan</p>
+      <p>Expected Graduation: May, 2026</p>
+
+      <!-- Hobbies & Interests -->
+      <h2>Hobbies & Interests</h2>
+      <ul class="hobbies-list">
+        <li>Hockey Enthusiast</li>
+        <li>Amateur DJ</li>
+        <li>Haircutting</li>
+        <li>Fashion</li>
+        <li>Financial Literacy</li>
+      </ul>
+
+      <!-- Gallery -->
+      <h2>Gallery</h2>
+      <div id="gallery-container">
+        <a href="./assets/images/51873333585_dc9afbe1f8_o.jpg" target="_blank" data-lightbox="gallery" data-title="Image Caption 1">
+          <img src="./assets/images/51873333585_dc9afbe1f8_o.jpg" alt="Thumbnail 1" width="200
+          ">
+        </a>
+        </a>
+        <!-- Add this inside the #gallery-container -->
+        <a href="./assets/images/IMG_1681.jpeg" target="_blank" data-lightbox="gallery" data-title="Image Caption 3">
+            <img src="./assets/images/IMG_1681.jpeg" alt="Thumbnail 2" width="200">
+        </a>
+        <a href="./assets/images/IMG_4602.jpeg" target="_blank" data-lightbox="gallery" data-title="Image Caption 4">
+            <img src="./assets/images/IMG_4602.jpeg" alt="Thumbnail 3" width="200">
+        </a>
+        <a href="./assets/images/IMG_4836.jpeg" target="_blank" data-lightbox="gallery" data-title="Image Caption 5">
+            <img src="./assets/images/IMG_4836.jpeg" alt="Thumbnail 4" width="200">
+        </a>
+  
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="tab-content">
+        <h2>Resume</h2>
+        <p>Below is a snapshot of my resume. Click on the image to view or download the full version.</p>
+      
+        <div id="resume-container">
+          <a href="./assets/images/Hendl_Filip_Resume.jpg" target="_blank" data-lightbox="resume" data-title="My Resume">
+            <img src="./assets/images/Hendl_Filip_Resume.jpg" alt="Thumbnail of Resume">
+          </a>
+        </div>
+        <div id="past-work">
+            <h3>Additional Work Experience</h3>
+            <ul class="work-experience-list">
+              <li>
+                <h4>Pro Shop/Bagstaff</h4>
+                <p><strong>Company:</strong> Moors Golf Club</p>
+                <p><strong>Duration:</strong> 9/01/23 - 11/01/24</p>
+                <p><strong>Description:</strong> Responsible for selling merchandise and maintaining clean and usable practice facilities.</p>
+              </li>
+              <li>
+                <h4>Server</h4>
+                <p><strong>Company:</strong> Houz Resturants </p>
+                <p><strong>Duration:</strong> 05/01/23 - 09/01/24</p>
+                <p><strong>Description:</strong> Delievered food to customers in a timely manner while fostering a comfortable and pleasing dining experience.</p>
+              </li>
+              <li>
+                <h4>Host/Food Expeditor/Busser</h4>
+                <p><strong>Company:</strong> Millenium Resturant Group</p>
+                <p><strong>Duration:</strong> 03/01/2020 - 10/01/22</p>
+                <p><strong>Description:</strong> Greeted customers, maintained a clean enviroment within the resturant, and optimized the resturants current system to ensure food from the kitchen would go to the correct table in an more efficient manner.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="tab-content">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio-item">
+            <h3>Writing Sample</h3>
+            <a href="https://docs.google.com/document/d/19LoPt7E9mUG5072ho2l6Zm9dm5KRzuHmaQBanuWmv1c/edit?usp=sharing"  target="_blank"> <h3>Click Here</h3></a>
+            <p>I did a in-depth analysis of the streaming platform Twitch. I was interested in seeing how information overload, misinformation, and misbehavior from streamers affected the viewers of this platform.</p>
+          </div>
+      
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item">
+              <h3>Creating and Designing a Website</h3>
+            </a>
+              <a href="https://fhendl.github.io/tester_cpd4_deliverable/" target="_blank"><h3>Click Here</h3></a>
+                <p>I was tasked with building a wesbite/interface that a highschool XC coach could use to track the data and times of his runners.</p>
+          </div>
+      
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio-item">
+            <a href="https://yourprojectlink3.com" target="_blank">
+              <h3>Data Analysis</h3>
+            </a>
+            <p>A short description of this project. <a href="https://yourprojectlink3.com" target="_blank">Learn More</a></p>
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <p class="validation-message" id="name-error"></p>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <p class="validation-message" id="email-error"></p>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <p class="validation-message" id="message-error"></p>
+      
+          <button type="submit">Send</button>
+        </form>
+        
+        <button id="contact-info-toggle">Show Contact Info</button>
+        <div id="dropdown-card">
+          <p>Email: fhendl@umich.edu</p>
+          <p>Phone: (269)-568-3052</p>
+          <p>Location: Ann Arbor, MI</p>
+        </div>
+      </section>
+      
+      
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Filip Hendl. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="./assets/js/script.js"></script>
+  <script src="dist/js/lightbox-plus-jquery.js"></script> <!-- Lightbox with jQuery included -->
+</body>
+
+</html>
