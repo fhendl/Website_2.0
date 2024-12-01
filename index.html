@@ -159,10 +159,9 @@
       
           <!-- Portfolio Item 3 -->
           <div class="portfolio-item">
-            <a href="https://yourprojectlink3.com" target="_blank">
               <h3>Data Analysis</h3>
             </a>
-            <p>A short description of this project. <a href="https://yourprojectlink3.com" target="_blank">Learn More</a></p>
+            <p>I am currently working on a project to figure out if elections with multiple unions competing result in lower or higher overall support for union representation? I am doing this by analyzing datasets from the National Labor Union Dataset and running statistical analysis and creating visual graphs to back my thesis.
           </div>
         </div>
       </section>
@@ -170,7 +169,7 @@
 
       <section id="contact" class="tab-content">
         <h2>Contact Me</h2>
-        <form id="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/mpwzoega" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required>
           <p class="validation-message" id="name-error"></p>
@@ -183,9 +182,12 @@
           <textarea id="message" name="message" placeholder="Your Message" required></textarea>
           <p class="validation-message" id="message-error"></p>
       
+          <!-- Hidden field for spam prevention -->
+          <input type="hidden" name="_captcha" value="false">
+      
           <button type="submit">Send</button>
         </form>
-        
+      
         <button id="contact-info-toggle">Show Contact Info</button>
         <div id="dropdown-card">
           <p>Email: fhendl@umich.edu</p>
@@ -193,6 +195,8 @@
           <p>Location: Ann Arbor, MI</p>
         </div>
       </section>
+      
+      
       
       
 
